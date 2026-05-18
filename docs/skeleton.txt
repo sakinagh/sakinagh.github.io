@@ -1,0 +1,55 @@
+sakinagh.github.io/
+│
+├── index.html                  # Home Page (About Me / Main Hub)
+├── research.html               # Combined Research, Publications, & Presentations
+├── projects.html               # Interactive Project Portfolio (e.g., Code, Apps)
+├── gallery.html                # Optional: Gallery / Creative / Blog page
+├── skeleton.txt                # Outline
+|
+│
+├── style.css                   # Main stylesheet (Layout, colors, typography)
+├── script.js                   # Main JavaScript file (Global functionality)
+│
+├── assets/                     # All static media and document files
+│   ├── images/
+│   │   ├── profile.jpg         # Your professional headshot
+│   │   ├── ibr_logo.png        # Logo for IBR
+│   │   └── tcu_logo.png        # Logo for TCU
+│   │
+│   └── documents/
+│       ├── CV.pdf              # Your downloadable CV/Resume
+│       ├── swpa-poster.pdf     # Poster presentation from SWPA
+│       ├── swacj-poster.pdf    # Poster presentation from SWACJ
+│       ├── cts-poster.pdf      # Undergrad SRS Poster
+│       ├── mind-poster.pdf     # Undergrad SRS Poster
+│       └── bss-poster.pdf      # Undergrad SRS Poster
+│
+└── research-materials/         # Deep-dive presentation materials & code logs
+    ├── swacj-2025/
+    │
+    └── swpa-2026/
+        ├── sentiment_analysis.html    # Standalone HTML or interactive data report
+        ├── logistic-regression.html   # Standalone HTML or statistical output report
+        └── references.pdf             # File for poster references
+            │
+            └── [NOTE: PURE LINK APPROACH FOR MD FILES]
+                # Because GitHub Pages does not automatically convert raw .md files into
+                # styled HTML pages without an underlying framework like Jekyll, will
+                # use the "Pure Link Approach" to display them.
+                #
+                # How it works in your HTML code:
+                # In your `research.html` or custom conference landing page, do NOT link 
+                # to the relative path ("research-materials/swpa-2026/references.md"). 
+                # If you do, the browser will just download the file or display it as unformatted text.
+                #
+                # Instead, link directly to the file's main user-facing URL on your 
+                # main GitHub repository code view.
+                #
+                # Syntax Example for your HTML anchor tag:
+                # <a href="https://github.com/sakinagh/sakinagh.github.io/blob/main/research-materials/swpa-2026/references.md" target="_blank">
+                #    View Reference List & Data Logs
+                # </a>
+                #
+                # Result: When a user scans your poster's QR code or clicks the link, 
+                # GitHub will intercept the request and beautifully render your Markdown 
+                # file automatically using their clean, readable repository interface.

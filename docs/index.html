@@ -1,117 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sakina Ghafoor - Home</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-/* Font styles for body, headings, and buttons */
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-/* Custom icon sizes for the main content sections */
-.fa-flask, .fa-lightbulb-o {font-size:200px}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakina | Academic Portfolio</title>
+    
+    <!-- FontAwesome for professional sidebar and navigation icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Links to your master stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <!-- Hamburger icon for small screens to toggle navigation menu -->
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <!-- Navigation links for larger screens -->
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resume/CV</a>
-    <a href="research.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Research & Projects</a>
-    <a href="publications.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Publications</a>
-    <a href="interests.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Interests</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
-  </div>
+    <!-- 1. TOP NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Sakina Ghafoor</a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">About</a>
+                <a href="research.html">Research</a>
+                <a href="projects.html">Projects</a>
+                <a href="gallery.html">More From Me</a>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Navbar on small screens (hidden by default) -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="resume.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Resume/CV</a>
-    <a href="research.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Research & Projects</a>
-    <a href="publications.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Publications</a>
-    <a href="interests.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Interests</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
-  </div>
-</div>
+    <!-- 2. TWO-COLUMN LAYOUT WRAPPER -->
+    <div class="page-container">
+        
+        <!-- LEFT SIDEBAR: PROFILE CARD & CONTACT -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <!-- Profile photo stored in your assets folder -->
+                <img src="assets/images/profile.jpg" alt="Sakina" class="profile-img">
+                <h2 class="profile-name">Sakina Ghafoor</h2>
+                <p class="profile-title">Graduate Research Assistant & Ph.D. Student</p>
+                <p class="profile-bio">Experimental Psychology at Texas Christian University</p>
+            </div>
+            
+            <!-- Professional Links & Metadata List -->
+            <ul class="sidebar-links">
+                <li>
+                    <i class="fa-solid fa-location-dot"></i> 
+                    <span>DFW, TX</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-file-pdf"></i> 
+                    <a href="assets/documents/CV.pdf" target="_blank">CV / Resume</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-linkedin"></i> 
+                    <a href="http://www.linkedin.com/in/sakina-ghafoor" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github"></i> 
+                    <a href="https://github.com/sakinagh" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-orcid"></i> 
+                    <a href="hhttps://orcid.org/0009-0002-7128-2431" target="_blank">OrcID</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i> 
+                    <a href="https://linktr.ee/sakinaghafoor">Contact Me</a>
+                </li>
+            </ul>
+        </aside>
 
-<!-- Header Section - Main introduction for Sakina Ghafoor -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Sakina Ghafoor</h1>
-  <p class="w3-xlarge">Researcher | Psychology & Computer Science</p>
-  <!-- Placeholder for an image if you decide to add one -->
-  <!-- <img src="https://placehold.co/200x200/FF0000/FFFFFF?text=SG" alt="Sakina Ghafoor" class="w3-image w3-circle w3-margin-top" style="width:150px"> -->
-  <p class="w3-large w3-margin-top">Exploring the intersection of human cognition and computational systems.</p>
-  <!-- Button to navigate to the Research & Projects page -->
-  <button onclick="window.location.href='research.html'" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-round-large">View My Research</button>
-</header>
+        <!-- RIGHT MAIN CONTENT SPACE -->
+        <main class="main-content">
+            <section id="about">
+                <h1>About Me</h1>
+                <p>
+                    I am a Ph.D. student in Experimental Psychology at Texas Christian University (TCU) 
+                    and a Graduate Research Assistant at the Institute of Behavioral Research (IBR). My academic work operates 
+                    at the intersection of behavioral psychology, data science, and technology.
+                </p>
+                <p>
+                    I study how advanced tools can be leveraged to build scalable interventions that optimize future 
+                    decision-making and promote positive behavior change across public health and organizational settings. 
+                </p>
+                
+                <h3>Background</h3>
+                <p>
+                    Prior to my doctoral studies, I earned a Bachelor of Science in Psychology with a minor in Data Science from TCU. 
+                    This cross-disciplinary background allows me to bridge complex psychological theory with technical application. 
+                    Additionally, I have been involved at the IBR since 2022, and my professional background includes analyzing 
+                    technology development and user experience at JPMorgan Chase, as well as researching AI's role in educational outcomes at a startup.
+                </p>
 
-<!-- First Grid Section - Current Role, Fields of Study/Work, Areas of Expertise -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>My Work & Expertise</h1>
-      <h5 class="w3-padding-32">Currently focusing on **[Your current role/research area]**. My work spans across **[Psychology Field]** and **[Computer Science Field]**, investigating **[Specific topics]**.</h5>
+                <h3>Research Interests</h3>
+                <p>
+                    My primary research areas focus on the design and evaluation of technology-driven behavioral solutions. 
+                    My research leverages technology and data science to understand and facilitate behavior change, with 
+                    applications in public health and organizational settings. My work is driven by an interest in exploring 
+                    scalable interventions that are responsive to individual health challenges and future decision-making.
+                </p>
+            </section>
+        </main>
 
-      <p class="w3-text-grey">My areas of expertise include:
-        <ul>
-            <li>**Psychology:** [e.g., Cognitive Psychology, Human-Computer Interaction, Behavioral Neuroscience, Social Psychology]</li>
-            <li>**Computer Science:** [e.g., Machine Learning, Data Science, Software Development, AI Ethics, Natural Language Processing]</li>
-            <li>**Multidisciplinary:** [e.g., Computational Social Science, Cognitive Modeling, Explainable AI]</li>
-        </ul>
-        My multidisciplinary approach aims to **[briefly state your mission/goal, e.g., develop human-centered AI systems, understand computational models of the mind, apply computational methods to psychological phenomena]**.
-      </p>
     </div>
 
-    <div class="w3-third w3-center">
-      <!-- Icon representing ideas or knowledge -->
-      <i class="fa fa-lightbulb-o w3-padding-64 w3-text-red"></i>
-    </div>
-  </div>
-</div>
+    <!-- 3. SITE-WIDE FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Sakina Ghafoor. All rights reserved.</p>
+    </footer>
 
-<!-- Second Grid Section - Latest Insights/Brief Research Overview -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <!-- Icon representing research or experimentation -->
-      <i class="fa fa-flask w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Latest Insights</h1>
-      <h5 class="w3-padding-32">Check out my recent work on **[brief topic of a publication or project]**.</h5>
-
-      <p class="w3-text-grey">
-        [Brief summary of your latest research or project, e.g., "My recent paper explores the impact of AI-driven conversational agents on human decision-making, combining insights from cognitive psychology and natural language processing."]. You can find more details on the <a href="publications.html">Publications</a> and <a href="research.html">Research & Projects</a> pages.
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- Quote Section -->
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">"The only way to do great work is to love what you do." - Steve Jobs</h1>
-</div>
-
-<!-- Footer Section -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">
-  <div class="w3-xlarge w3-padding-32">
-    <!-- Social media icons with placeholders for your actual links -->
-    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE" target="_blank" class="fa fa-linkedin w3-hover-opacity"></a>
-    <a href="https://github.com/YOUR_GITHUB_PROFILE" target="_blank" class="fa fa-github w3-hover-opacity"></a>
-    <!-- You can add other relevant social icons if you have them, otherwise remove -->
-    <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
+    <!-- Main JavaScript link -->
+    <script src="script.js"></script>
 </body>
 </html>

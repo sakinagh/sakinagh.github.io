@@ -1,11 +1,4 @@
-// JavaScript function to toggle the navigation menu on small screens
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show"; // Add 'w3-show' class to display the menu
-  } else {
-    x.className = x.className.replace(" w3-show", ""); // Remove 'w3-show' class to hide the menu
-  }
-}
-  
-//})(jQuery);
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Portfolio site script initialized successfully.");
+    // Future features: light/dark mode toggle or interactive project filtering can go here
+});
